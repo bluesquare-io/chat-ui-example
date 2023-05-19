@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#app {
+    height: 100%;
+}
+
+/* ListContainer */
+
+.UIListContainer-unified > div {
+    @apply divide-y;
+}
+.UIListContainer-unified:not(.UIListContainer-flat) {
+    @apply divide-gray-200;
+}
+.UIListContainer-unified:not(.UIListContainer-card) > div > * {
+    @apply py-4;
+}
+.UIListContainer-edge:not(.UIListContainer-card) > div > * {
+    @apply px-4 sm:px-0;
+}
+.UIListContainer-unified.UIListContainer-card {
+    @apply bg-white overflow-hidden;
+}
+.UIListContainer-unified.UIListContainer-card:not(.UIListContainer-flat) {
+    @apply shadow;
+}
+.UIListContainer-unified.UIListContainer-card.UIListContainer-flat {
+    @apply border border-gray-300;
+}
+.UIListContainer-unified.UIListContainer-card.UIListContainer-flat > div {
+    @apply divide-gray-300;
+}
+.UIListContainer-unified.UIListContainer-card:not(.UIListContainer-edge) {
+    @apply rounded-md;
+}
+.UIListContainer-unified.UIListContainer-card.UIListContainer-edge {
+    @apply sm:rounded-md;
+}
+.UIListContainer-unified.UIListContainer-card:not(.UIListContainer-edge) > div > * {
+    @apply px-6 py-4;
+}
+.UIListContainer-unified.UIListContainer-card.UIListContainer-edge > div > * {
+    @apply px-4 py-4 sm:px-6;
+}
+.UIListContainer-separated > div {
+    @apply space-y-3;
+}
+.UIListContainer-separated > div > * {
+    @apply bg-white shadow overflow-hidden;
+}
+.UIListContainer-separated.UIListContainer-edge > div > * {
+    @apply px-4 py-4 sm:px-6 sm:rounded-md;
+}
+.UIListContainer-separated:not(.UIListContainer-edge) > div > * {
+    @apply rounded-md px-6 py-4;
+}
+
+/* ButtonGroup */
+
+.UIButtonGroup > * {
+    @apply focus:z-10;
+}
+
+.UIButtonGroup > *:not(:first-child) {
+    @apply -ml-px;
+}
+
+.UIButtonGroup > *:first-child {
+    @apply rounded-l-md rounded-r-none;
+}
+
+.UIButtonGroup > *:last-child {
+    @apply rounded-r-md rounded-l-none;
+}
+
+.UIButtonGroup > *:not(:first-child):not(:last-child) {
+    @apply rounded-none;
+}
+
+/* AvatarStack */
+
+.UIAvatarStack > * {
+    @apply ring-2 ring-white rounded-full;
+}
