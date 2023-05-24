@@ -13,6 +13,10 @@ use Inertia\Response;
 
 class ProfileController extends Controller
 {
+
+    public function welcome(){
+        return view('welcome');
+    }
     /**
      * Display the user's profile form.
      */

@@ -29,6 +29,7 @@
         "@vitejs/plugin-vue": "^2.3.3",
         "classnames": "^2.3.1",
         "moment": "^2.29.1",
-        "notiwind": "^1.2.5"
+        "notiwind": "^1.2.5",
+        "vue-socket.io": "^3.0.10"
     }
 }

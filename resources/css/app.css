@@ -84,3 +84,25 @@
 .UIAvatarStack > * {
     @apply ring-2 ring-white rounded-full;
 }
+
+.logo{
+    background: transparent url(/images/logo.svg) 50% no-repeat;
+}
+
+
+#expandableContent{
+    display: none;
+}
+
+.expanded {
+    max-height: none;
+}
+
+.expanded #expandableContent {
+    display: block;
+}
+
+.text-sm.expanded > p {
+    margin-bottom: 1rem;
+}
+

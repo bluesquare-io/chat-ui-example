@@ -7,6 +7,7 @@
         <Link :href="route('register')" class="font-medium text-primary-600 hover:text-primary-500">Inscription</Link>
     </p>
 </template>
+
 <script>
 import AuthLayout from "@/Layouts/AuthLayout.vue";
 import { Link } from "@inertiajs/inertia-vue3";
